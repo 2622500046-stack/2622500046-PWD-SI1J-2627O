@@ -74,3 +74,45 @@
         margin: 8px 6px 0 0;
         border: 1px solid #003366;
     }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 12px;
+        font-family: Arial, sans-serif;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    @media (min-width: 768px) {
+        main {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+
+    #contact {
+        grid-column: 1 / -1;
+    }
