@@ -172,5 +172,16 @@
 
         #contact {
             grid-column: 1 / -1;
-        }   
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            margin-top: 5px;
+        }
     }
