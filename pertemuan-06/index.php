@@ -1,20 +1,20 @@
 <?php
 // P6: PHP dasar dan pemrograman sisi peladen
 // Bagian 1: Variabel dan konstanta
-$nim = "0344300002";
-$namaMahasiswa = "Yohanes Setiawan Japriadi";
+$nim = "2622500046";
+$namaMahasiswa = "Muhammad Ramadhani";
 $programStudi = "SI";
 $tahunAkademik = "2026/2027";
-$semester = 2;
-$ipk = 3.75;
+$semester = 1;
+$ipk = 3.90;
 $statusAktif = true;
 $catatanTambahan = null;
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "satpamal";
+const PROFIL_GITHUB = "2622500046-stack";
 ?>
 
 <!doctype html>
-<html lang="id">
+<html lang="id">-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,8 +50,10 @@ const PROFIL_GITHUB = "satpamal";
 <main>
     <section id="about">
         <h2>Selamat Datang</h2>
-        <p>Halo, saya Muhaammad Ramadani. Saya sedang mempelajari Pemrograman Web Dasar.</p>
-
+        <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah
+        <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik;    
+        ?>.</p>
+        
         <img src="img/foto-profil.jpeg" width="200" height="250" alt="Foto Profil" />
     </section>
 
@@ -75,7 +77,7 @@ const PROFIL_GITHUB = "satpamal";
         <h2>Kontak</h2>
         <p>
             kunjungi
-             <a href="https://github.com/2622500046-stack/2622500046-PWD-SI1J-2627O">profil GitHub saya</a>
+             <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>
             </p>
     
         <form id="contactForm" action="index.html" method="get" novalidate> 
