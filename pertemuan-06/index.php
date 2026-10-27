@@ -97,6 +97,7 @@ $fokusProgramStudi = "Belum ditentukan";
             <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
             <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
             <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
+            <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
     
             <h3>Target Belajar</h3>
             <h3>Target Belajar (Perulangan for)</h3>
