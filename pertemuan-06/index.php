@@ -146,11 +146,10 @@ $fokusProgramStudi = "Belum ditentukan";
     <section id="contact">
         <h2>Kontak</h2>
         <p>
-            kunjungi
-             <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>
-            </p>
-    
-        <form id="contactForm" action="index.html" method="get" novalidate> 
+        Kunjungi
+        <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+        </p>
+        <form id="contactForm" action="index.php" method="get" novalidate>
          <div class="form-group">
         <label for="nama">Nama Lengkap</label><br />
 
@@ -237,9 +236,3 @@ $fokusProgramStudi = "Belum ditentukan";
     </footer>
     <script src="script.js"></script>
 </body>
-<!-- </html> -->
-
-<p>
-Kunjungi
-<a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
-</p>
