@@ -16,8 +16,10 @@ $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = $semester >= 1 && $semester <= $batasSemester;
 $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
-?>
+
 // Bagian 3: Percabangan if-elseif-else
+$namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik
+Informatika" : "Lainnya");
 if ($semester < 3) {
 $keteranganSemester = "Semester awal";
 } elseif ($semester <= 6) {
@@ -25,7 +27,7 @@ $keteranganSemester = "Semester menengah";
 } else {
 $keteranganSemester = "Semester akhir";
 }
-
+?>
 
 <!doctype html>
 <html lang="id">-
@@ -80,7 +82,9 @@ $keteranganSemester = "Semester akhir";
             <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
             <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
             <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
-
+            <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
+            <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+    
             <h3>Target Belajar</h3>
             <ol>
                 <li>Memahami Struktur HTML5.</li>
