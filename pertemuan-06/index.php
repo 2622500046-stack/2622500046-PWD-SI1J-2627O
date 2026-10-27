@@ -238,3 +238,8 @@ $fokusProgramStudi = "Belum ditentukan";
     <script src="script.js"></script>
 </body>
 <!-- </html> -->
+
+<p>
+Kunjungi
+<a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+</p>
