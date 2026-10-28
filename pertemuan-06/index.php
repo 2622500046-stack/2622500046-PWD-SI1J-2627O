@@ -193,7 +193,7 @@ $fokusProgramStudi = "Belum ditentukan";
     </div>
 
     <div class="form-group">
-        <p>Topik yang Diminati</p>
+        <p>Jenis Pesan</p>
 
         <input type="checkbox" id="minat-html" name="minat" value="HTML" />
         <label for="minat-html">HTML</label>
@@ -209,24 +209,30 @@ $fokusProgramStudi = "Belum ditentukan";
         <option value="">-- Pilih Program Studi --</option>
         <option value="SI">Sistem Informasi</option>
         <option value="TI">Teknik Informatika</option>
+        </select>
     </div>
 
     <div class="form-group">
-        <label for="prodi">Program Studi</label><br />
+        <label for="prodi">Pesan</label><br />
        
         <textarea
         class="input-form"
         id="pesan"
         name="pesan"
+        rows="4"
         maxlength="300"
-        placeholder="Tulis pesan Anda"
+        placeholder="Tulis pesan anda"
         required
         ></textarea>
     </div>
 
+    <div class="form-group">
     <button type="submit">Kirim</button>
     <button type="reset">Batal</button>
-    <p id="formFeedback"></p>
+</div>
+
+<p id="formFeedback"></p>
+
   </form>
  </section>
 </main>
